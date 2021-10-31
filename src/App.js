@@ -4,6 +4,7 @@ import Posts from './components/posts/Posts';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Navbar from './components/layout/Navbar';
+import PostDetails from './components/posts/PostDetails';
 
 const App = () => {
 	return (
@@ -20,6 +21,9 @@ const App = () => {
 				</Route>
 				<Route path="/posts">
 					<Posts />
+				</Route>
+				<Route path="/posts/:postId">
+					<PostDetails />
 				</Route>
 			</div>
 		</div>
