@@ -1,7 +1,7 @@
 .navbar {
 	width: 100%;
 	height: 5rem;
-	background-color: #4477b9;
+	background-color: #b124db;
 	padding: 0 10%;
 }
 
@@ -30,8 +30,9 @@
 }
 
 .navbar a:hover,
-.navbar a:active {
+.navbar a:active,
+.active {
 	color: #95bcf0;
 	padding-bottom: 0.25rem;
-	border-bottom: 4px solid #95bcf0;
+	border-bottom: 4px solid #ec7818;
 }
