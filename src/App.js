@@ -1,5 +1,5 @@
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Posts from './components/posts/Posts';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
@@ -13,18 +13,20 @@ const App = () => {
 				<Navbar />
 			</div>
 			<div className="container">
-				<Route path="/register">
-					<Register />
-				</Route>
-				<Route path="/login">
-					<Login />
-				</Route>
-				<Route path="/posts">
-					<Posts />
-				</Route>
-				<Route path="/posts/:postId">
-					<PostDetails />
-				</Route>
+				<Switch>
+					<Route path="/register">
+						<Register />
+					</Route>
+					<Route path="/login">
+						<Login />
+					</Route>
+					<Route exact path="/posts">
+						<Posts />
+					</Route>
+					<Route path="/posts/:postId">
+						<PostDetails />
+					</Route>
+				</Switch>
 			</div>
 		</div>
 	);

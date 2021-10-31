@@ -17,7 +17,7 @@ const Navbar = (props) => {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink activeClassName="active" to="posts">
+					<NavLink activeClassName="active" to="/posts">
 						Posts
 					</NavLink>
 				</li>
