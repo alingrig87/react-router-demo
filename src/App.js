@@ -5,6 +5,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Navbar from './components/layout/Navbar';
 import PostDetails from './components/posts/PostDetails';
+import Welcome from './components/layout/Welcome';
 
 const App = () => {
 	return (
@@ -14,6 +15,9 @@ const App = () => {
 			</div>
 			<div className="container">
 				<Switch>
+					<Route path="/welcome">
+						<Welcome />
+					</Route>
 					<Route path="/register">
 						<Register />
 					</Route>

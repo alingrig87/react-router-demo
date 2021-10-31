@@ -7,6 +7,11 @@ const Navbar = (props) => {
 		<div className="navbar">
 			<ul>
 				<li>
+					<NavLink activeClassName="active" to="/welcome">
+						Welcome
+					</NavLink>
+				</li>
+				<li>
 					<NavLink activeClassName="active" to="/register">
 						Register
 					</NavLink>
