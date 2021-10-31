@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Posts from './components/posts/Posts';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
@@ -15,6 +15,9 @@ const App = () => {
 			</div>
 			<div className="container">
 				<Switch>
+					<Route path="/" exact>
+						<Redirect to="/welcome" />
+					</Route>
 					<Route path="/welcome">
 						<Welcome />
 					</Route>
